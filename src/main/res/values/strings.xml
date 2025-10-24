@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Responsi 1 Mobile H1D023113</string>
+    <string name="club_name">FC Nantes</string>
+    <!-- Tempatkan token di resources saat development, lebih baik via BuildConfig/gradle -->
+    <string name="football_token">b2c20a0f485c424ea6b285aabd29b7f2</string>
+    <string name="founded_label">Founded:</string>
+    <string name="stadium_label">Stadium:</string>
+    <string name="history_label">Sejarah singkat:</string>
+    <string name="fc_nantes">FC Nantes</string>
+    <string name="profil_klub">Profil Klub</string>
+    <string name="pelatih">Pelatih</string>
+    <string name="pemain">Pemain</string>
+    <string name="background">background</string>
+    <string name="fc_nantes_app">FC Nantes App</string>
+    <string name="informasi_seputar_fc_nantes_profil_klub_pelatih_dan_pemain">Informasi seputar FC Nantes — Profil Klub, Pelatih, dan Pemain.</string>
+    <string name="profile">Profile</string>
+    <string name="coach">Coach</string>
+    <string name="players">Players</string>
+    <string name="player_image" />
+</resources>

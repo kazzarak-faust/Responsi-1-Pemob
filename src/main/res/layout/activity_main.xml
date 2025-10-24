@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_background_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/stadion"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/iv_logo_nantes" />
+
+    <!-- Logo FC Nantes -->
+    <ImageView
+        android:id="@+id/iv_logo_nantes"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_nantes_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fc_nantes_app"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo_nantes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/informasi_seputar_fc_nantes_profil_klub_pelatih_dan_pemain"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnProfile"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            android:textSize="16sp"
+            android:icon="@drawable/ic_profile"
+            app:iconGravity="textStart"
+            app:iconTint="@color/white"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:layout_marginBottom="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCoach"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/coach"
+            android:textSize="16sp"
+            android:icon="@drawable/ic_coach"
+            app:iconGravity="textStart"
+            app:iconTint="@color/white"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:layout_marginBottom="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPlayers"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/players"
+            android:textSize="16sp"
+            android:icon="@drawable/ic_players"
+            app:iconGravity="textStart"
+            app:iconTint="@color/white"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
