@@ -1,10 +1,8 @@
 # Responsi-1-Pemob
-Nama : Muhammad Fadhel Fusta --
-NIM  : H1D023113 --
-Shift : E ->F --
-
-
-
+Nama : Muhammad Fadhel Fusta  
+NIM  : H1D023113  
+Shift : E ->F  
+  
 https://github.com/user-attachments/assets/b941454c-77fc-4bab-8de1-23c749bc97af
 
 Data pemain diambil dari API menggunakan Retrofit melalui ApiService yang memanggil endpoint teams/{id} dan mengembalikan objek TeamResponse.
